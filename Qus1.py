@@ -1,5 +1,16 @@
-##Q1. Create a class Student with no attributes. Create an object of the class
+arry = [2,3,4,5,6,8]
+i=0
+if len(arry) == 0 :
+    print("Arrey is empty")
+else:
+    largest = arry[0]
+    for i in range(1,len(arry)):
+        if arry[i] > largest:
+            largest = arry[i]
 
-class student:
-    pass
-s1 = student()
+    smallest = arry[0]
+    for i in range(1,len(arry)):
+        if arry[i] < smallest:
+         smallest = arry[i]
+print(smallest)
+print(largest)

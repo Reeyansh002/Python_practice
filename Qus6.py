@@ -1,18 +1,14 @@
-class person():
-    def __init__(lol,name,age=18):
-        lol.name = name
-        lol.age = age
-
-    def greet(lol):
-        print("Hello")
-        print("How are you " + lol.name)
-
-p1 = person("aryan")
-p2 = person("Reeyansh",21)
-
-print(p1.name)
-print(p1.age)
-p1.greet()
-print(p2.name)
-print(p2.age)
-p2.greet()
+Arr = [22,65,44,88,23,56]
+if len(Arr) == 0:
+    print("Arrey is empty")
+else:
+    smallest = second_smallest = Arr[0]
+    for i in range (1,len(Arr)):
+        if Arr[i] < smallest:
+            second_smallest = smallest
+            smallest = Arr[i]
+        else:
+            Arr[i] < second_smallest and Arr[i] != smallest
+            second_smallest = Arr[i]
+    print(smallest)
+    print(second_smallest)  
